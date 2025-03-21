@@ -1,0 +1,12 @@
+.Footer {
+    font-family: MuseoSans-500, sans-serif;
+    width: 100%;
+    background-color: #C60C31;
+    height: 40px;
+    position: fixed;
+    bottom: 0px;
+    line-height: 44px;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: center;
+}

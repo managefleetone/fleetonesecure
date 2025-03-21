@@ -1,0 +1,10 @@
+.Header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkBox {
+    width: 186px;
+    height: 66px;
+}

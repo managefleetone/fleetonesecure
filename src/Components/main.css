@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: MuseoSans-500, sans-serif;
+  min-width: 280px;
+  min-height: 100vh;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: #333;
+  line-height: 1.42857143;
+  font-size: 14px;
+  background-color: #fff;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 15px;
+}
+.title-class {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+}
+.confirm-button-class {
+  margin: 0;
+  background-color: #608af7;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 3px 3px 6px #000000b2;
+  border-radius: 7px;
+}
