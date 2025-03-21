@@ -7,7 +7,7 @@ export const useAuthStore = create((set) => ({
   login: async (username, password) => {
     try {
       const response = await axios.post(
-        "https://fleet-one-be.vercel.app/login",
+        "https://fleetoenserver.vercel.app//login",
         {
           username,
           password,
