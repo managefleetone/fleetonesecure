@@ -6,13 +6,10 @@ export const useAuthStore = create((set) => ({
   error: null,
   login: async (username, password) => {
     try {
-      const response = await axios.post(
-        "https://fleetoenserver.onrender.com/login",
-        {
-          username,
-          password,
-        }
-      );
+      const response = await axios.post("http://localhost:8080", {
+        username,
+        password,
+      });
 
       if (response?.data.success) {
         set({
