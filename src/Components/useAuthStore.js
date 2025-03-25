@@ -6,10 +6,15 @@ export const useAuthStore = create((set) => ({
   error: null,
   login: async (username, password) => {
     try {
-      const response = await axios.post("https://fleetonesecure.onrender.com/login", {
-        username,
-        password,
-      });
+      const response = await axios.post(
+        "https://fleetonesecure.onrender.com/login",
+        {
+          username,
+          password,
+        }
+      );
+
+      console.log("Ответ сервера:", response);
 
       if (response?.data.success) {
         set({
@@ -32,6 +37,8 @@ export const useAuthStore = create((set) => ({
         });
       }
     } catch (error) {
+      console.error("Ошибка авторизации:", error);
+
       set({ user: null, error: "Login failed" });
       return false;
     }
