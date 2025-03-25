@@ -6,7 +6,7 @@ export const useAuthStore = create((set) => ({
   error: null,
   login: async (username, password) => {
     try {
-      const response = await axios.post("http://localhost:8080", {
+      const response = await axios.post("https://fleetonesecure.onrender.com/login", {
         username,
         password,
       });
