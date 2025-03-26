@@ -295,7 +295,12 @@ function Form() {
             </div>
             <div className="SubRes">
               <button id="btnSub" type="sybmit" className="btnSub">
-                <span>Submit</span>
+                <a
+                  href="https://manage.fleetone.com/security/fleetOneLogin"
+                  style={{ textDecoration: "none", color: "#333" }}
+                >
+                  Submit
+                </a>
               </button>
               <button
                 onClick={resetCode}
